@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 import { Play, Film, Video, Tv, Check, Phone, Mail, Menu, X } from 'lucide-react';
 
 export default function Home() {
@@ -51,7 +52,7 @@ export default function Home() {
 
   const handlePlanClick = (planName: string, planPrice: string) => {
     const message = `Olá! Tenho interesse no plano ${planName} por R$ ${planPrice}. Gostaria de mais informações.`;
-    const whatsappUrl = `https://wa.me/5571981902254?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/55?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 
@@ -76,7 +77,7 @@ export default function Home() {
         <nav className="container mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
             <div className="text-white text-2xl font-bold">
-              Mundo IPTV
+              <Image src="/logo.png" alt="Logo" width={100} height={50} />
             </div>
             
             {/* Desktop Menu */}
@@ -459,12 +460,20 @@ export default function Home() {
             </div>
             <div>
               <h4 className="text-lg font-bold mb-4 text-yellow-300">Contato</h4>
-              <p className="text-gray-300">WhatsApp: 71 98190-2254</p>
+              <p className="text-gray-300">WhatsApp: 71 7198190-2254</p>
               <p className="text-gray-300">Email: contato@mundoiptv.com</p>
             </div>
           </div>
           <div className="border-t border-gray-700 pt-8 text-center">
-            <p className="text-gray-400">&copy; 2025 Mundo IPTV. Todos os direitos reservados.</p>
+            <p className="text-gray-400">&copy; {new Date().getFullYear()} Mundo IPTV. Todos os direitos reservados.</p>
+            <a 
+              href="https://www.vanderleidev.live/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="hover:text-yellow-300 transition-colors"
+            >
+              Vanderlei Neto
+            </a>
           </div>
         </div>
       </footer>
@@ -472,3 +481,4 @@ export default function Home() {
   );
 }
 
+// This code is a Next.js component for the home page of a streaming service called "Mundo IPTV".
