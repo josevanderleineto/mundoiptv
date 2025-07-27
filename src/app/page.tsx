@@ -145,8 +145,7 @@ export default function Home() {
                 Acesso completo ao melhor do streaming
               </p>
               <p className="text-lg mb-8 leading-relaxed">
-                Desfrute de milhares de canais, filmes e séries com a melhor qualidade de imagem. 
-                Entretenimento sem limites para toda a família.
+             Desfrute de milhares dos canais de notícias e esportes além de  filmes e séries com a melhor qualidade de imagem.
               </p>
               <div className="flex flex-wrap gap-4">
                 <button 

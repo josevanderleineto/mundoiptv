@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Mundo IPTV - Streaming Completo",
-  description: "Acesso completo ao melhor do streaming. Desfrute de milhares de canais, filmes e séries com a melhor qualidade de imagem.",
-  keywords: "IPTV, streaming, canais, filmes, séries, entretenimento",
+  description: "Acesso completo ao melhor do streaming. Desfrute de milhares de canais de de notícias e esportes além de  filmes e séries com a melhor qualidade de imagem.",
+  keywords: "IPTV, streaming, canais, filmes, séries, entretenimento, esporte, notícias",
   authors: [{ name: "Mundo IPTV" }],
   viewport: "width=device-width, initial-scale=1",
 };
@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.png" />
       </head>
       <body
         className={`${geist.variable} ${geistMono.variable} antialiased`}
